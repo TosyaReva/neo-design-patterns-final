@@ -14,19 +14,12 @@ export class ExperienceBlock implements IBlock {
 
   /**
    * Рендеринг блоку досвіду роботи
-   *
-   * TODO: Реалізуйте метод render(), який створює DOM-елементи для секції досвіду
-   * та використовує патерн Composite для рендерингу проєктів всередині цієї секції.
    */
   render(): HTMLElement {
     // Створюємо контейнер для досвіду роботи
     const container = document.createElement("section");
     container.className = "section experience";
     container.innerHTML = "<h2>Experience</h2>";
-
-    // TODO: Для кожного досвіду створити div.experience-item з innerHTML (позиція, компанія, період)
-    // TODO: Додати проєкти (ProjectBlock, HighlightDecorator) до цього div
-    // TODO: Додати всі experience-item до секції
 
     const markup = this.d.map((experience) => {
       const containerExperience = document.createElement("div");

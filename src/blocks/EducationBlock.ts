@@ -10,8 +10,6 @@ export class EducationBlock implements IBlock {
 
   /**
    * Рендеринг блоку освіти
-   *
-   * TODO: Реалізуйте метод для відображення інформації про освіту
    */
   render(): HTMLElement {
     // Створюємо секцію
@@ -19,8 +17,6 @@ export class EducationBlock implements IBlock {
     el.className = "section education";
     el.innerHTML = "<h2>Education</h2>";
 
-    // TODO: Додайте до секції інформацію про навчальний заклад (this.d.institution),
-    // отриманий ступінь (this.d.degree) та період навчання (this.d.graduation)
     el.innerHTML += this.d.map(
       (education) =>
         `<p>${education.degree} ${education.field}, ${education.institution}(${education.graduation}))<p>`

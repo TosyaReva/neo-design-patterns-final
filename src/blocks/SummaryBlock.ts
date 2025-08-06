@@ -10,8 +10,6 @@ export class SummaryBlock implements IBlock {
 
   /**
    * Рендеринг блоку короткого опису
-   *
-   * TODO: Реалізуйте метод для відображення секції з коротким описом
    */
   render(): HTMLElement {
     // Створюємо секцію
@@ -24,8 +22,6 @@ export class SummaryBlock implements IBlock {
     `;
 
     el.innerHTML = markup;
-
-    // TODO: Додайте до секції заголовок h2 і параграф з текстом опису (this.d.text)
 
     return el;
   }

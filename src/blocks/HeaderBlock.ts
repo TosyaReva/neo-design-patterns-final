@@ -10,16 +10,12 @@ export class HeaderBlock implements IBlock {
 
   /**
    * Рендеринг блоку заголовка
-   *
-   * TODO: Реалізуйте метод render(), який створює DOM-елементи
-   * для відображення даних заголовка: ім'я, позиція та контактна інформація.
    */
   render(): HTMLElement {
     // Створюємо контейнер для заголовка
     const header = document.createElement("header");
     header.className = "section header";
 
-    // TODO: Заповнити header.innerHTML з h1 (ім'я), p (title), p (контакти: email, phone, location)
     const markup = `
     <h1>${this.d.fullName}</h1>
     <p><i>${this.d.title}</i></p>
